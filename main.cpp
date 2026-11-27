@@ -8,15 +8,17 @@ int main(){
 
     srand(static_cast<unsigned int>(time(0))); //evita advertencias del compilador
 
-    Tablero t; 
+    Tablero resuelto; 
 
-    cout << "NIVEL 1 mezclado"<< endl; 
-    t.mezclarnivel(1);
-    t.mostrarconsola();
+    cout << "TABLERO RESUELTO"<< endl; 
+    resuelto.mostrarconsola();
 
-    cout << "NIVEL 2 mezclado"<< endl; 
-    t.mezclarnivel(2);
-    t.mostrarconsola();
+    cout << "DISTANCIA MANHATTAN:"<< resuelto.distanciaman() << endl; 
 
+    Tablero mezclado;
+    mezclado.mezclarnivel(1);
+    cout << "TABLERO MEZCLADO"<< endl;
+    mezclado.mostrarconsola();
+    cout << "DISTANCIA MANHATTAN:"<< mezclado.distanciaman() << endl;
     return 0; 
 }

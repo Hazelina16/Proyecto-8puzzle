@@ -23,6 +23,7 @@ class Tablero {
         bool esmeta(const int meta[3][3]) const;
         int getvalor(int fila, int columna) const;
         void mezclarnivel(int nivel);
+        int distanciaman() const; 
 };
 
 #endif

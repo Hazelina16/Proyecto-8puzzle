@@ -146,3 +146,18 @@ void Tablero::mezclarnivel(int nivel){
     }
 
 }
+
+int Tablero::distanciaman() const{
+    int suma = 0; 
+    for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
+            int valor = matriz[i][j]; 
+            if(valor != 0){
+                int filameta = (valor - 1) / 3; 
+                int columnameta = (valor - 1) % 3; 
+                suma += abs(i - filameta) + abs(j - columnameta);
+            }
+        }
+    }
+    return suma;
+}

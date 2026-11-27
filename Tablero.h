@@ -22,6 +22,7 @@ class Tablero {
         bool moverficha(int fila, int columna);
         bool esmeta(const int meta[3][3]) const;
         int getvalor(int fila, int columna) const;
+        void mezclarnivel(int nivel);
 };
 
 #endif

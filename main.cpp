@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 
-    srand(static_cast<unsigned int>(time(0))); 
+    srand(static_cast<unsigned int>(time(0))); //evita advertencias del compilador
 
     Tablero t; 
 

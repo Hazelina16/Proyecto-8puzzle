@@ -44,12 +44,12 @@ void Tablero::mostrarconsola(){
     for(int i=0; i<3; i++){
         for(int j=0; j<3; j++){
             if(matriz[i][j] == 0){
-                cout << "  ";
+                cout << "[ ]";
             } else {
-                cout << matriz[i][j] << " ";
+                cout << "[" << matriz[i][j] << "] ";
             }
-            cout << "\n";
         }
+        cout << "\n";
     }
 }
 

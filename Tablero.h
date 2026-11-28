@@ -21,7 +21,10 @@ class Tablero {
         void mostrarconsola();
         bool moverficha(int fila, int columna);
         bool esmeta(const int meta[3][3]) const;
+        bool esmeta() const;
         int getvalor(int fila, int columna) const;
+        int getfilavacia() const;
+        int getcolvacia() const;
         void mezclarnivel(int nivel);
         int distanciaman() const; 
 };

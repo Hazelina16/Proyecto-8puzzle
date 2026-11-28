@@ -161,3 +161,20 @@ int Tablero::distanciaman() const{
     }
     return suma;
 }
+
+bool Tablero::esmeta() const{
+    int base[3][3] = {
+        {1,2,3},
+        {4,5,6},
+        {7,8,0}};
+    }
+    return esmeta(base);
+}
+
+int Tablero::getfilavacia() const{
+    return filavacia; 
+}
+
+int Tablero::getcolvacia() const{
+    return colvacia; 
+}
